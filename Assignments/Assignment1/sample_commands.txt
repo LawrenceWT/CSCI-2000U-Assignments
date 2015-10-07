@@ -1,0 +1,24 @@
+1) echo hello world - This command displays everything after the word echo in the terminal. In this example, the command will display "hello world".
+
+
+2) echo {con,pre}{sent,fer}{s,ed} - This command print out each possibile word pairing, starting with the first word in the first bracket,the first word in the second bracket, and the first word in the third bracket to make a new group. 
+eg." con" is paired with "sent", and then with "s" to make "consents". "Con" is then paired with "sent", and then with "s" to make "Consents" 
+The final output will be "consents consented confers confered presents presented prefers prefered"
+
+
+3) date - This command displays the current date.
+
+
+4)whoami - This command displays the name of the computer
+
+
+5) cal 2000 - This command displays the calendar year of the year 2000; 
+
+
+6) cal 9 1752 - This command displays the calendar of month nine (September) of teh year 1752. This,however will display an incorrect calendar month the programmer who made the 'cal' program had an error in his code. 
+
+
+7) bc -l  - This command opens up a basic math program for the user to use. 
+
+
+8) echo 5+4 | bc -l - This command prints out '5+4' then opens the basic math program. Since the 5+4 will now be displayed in the math program, it will think the user wants to calculate 5+4 and it will then display the sum, which is 9.
