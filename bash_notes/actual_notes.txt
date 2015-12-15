@@ -1,0 +1,78 @@
+		Practical computing notes
+
+Chapter 2: The Unix Shell
+
+
+The unix shell allows the user to create files and directories.
+
+$  <----  shell prompt 
+
+
+
+Comments
+
+
+whoami --> checks user ID 
+
+pwd  --> “Print Working Directory” (Shows where you currently are in the directory files) eg. home/tyrone/desktop
+
+/ --> to show root directory
+
+ls --> stands for “Listing”
+
+ls -F --> An argument or flag modifying the command’s behaviour 
+
+
+ls -F <filename> --> a relative path 
+
+ls -F -a  --> reveal all files, even hidden notes 
+
+
+
+. or .. --> .. is go to parent directory, . is go back one directory
+
+rm ... --> deletes a file in a folder 
+
+rmdir --> deletes a folder (The folder must first be empty) 
+
+rmf.. --> deletes something by force without asking the user
+
+
+mv junk.abw quotes.txt --> Renames the junk.abw file to be called quotes.txt 
+
+* --> a wild card. (eg *.pdb will find all files with the pdb extension) 
+
+wc --> word count (will dtermine the # of lines, # of words, and # characters in a file) 
+	(eg wc junk.txt      1, 1, 4. one line, one word, four characters)
+
+ls -l --> displays the permissions of a file or folder 
+
+(r = read, w = write, x = executable) 
+
+eg 
+
+-rwx -r-x r-- (separates into three groups: user, group, all) 
+
+grep --> finds and prints lines in a file that match a pattern.
+
+eg: grep not test.txt - finds all the lines with “not” in it 
+
+grep -n finds the sentence number 
+
+grep -w only matches whole words that match a pattern 
+
+grep -i ignores letter case (finds both upper and lowercase)
+
+grep -v (invert search) finds line that do not match the pattern
+
+
+
+find . -type d
+
+. --> current folder 
+
+type d --> all directories 
+
+find . -type d --> find all the files that are directories in the current folder
+
+type f --> ordinary files
