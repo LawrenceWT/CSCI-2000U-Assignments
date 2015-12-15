@@ -4,6 +4,8 @@
 # except the two header lines?
 # Enter the relevant Unix command(s) used below.
 
+cat classlist.csv | tail -130
+
 
 
 
@@ -13,7 +15,8 @@
 # Enter the relevant Unix command(s) used below as well as the number
 # of students in the list.
 
-
+cat classlist.csv | grep 100*
+there are 130 students
 
 
 # part (c)
@@ -22,7 +25,11 @@
 # at the top of the list? Which student would be at the bottom of the
 # list?
 # Enter the relevant Unix command(s) used below as well as the names
-# of the first and last students in the new list.
+# of the first and last students in the new list. 
+
+sort -k2 classlist.csv
+Alpha Foushee - top
+Xavier Almy - bottom
 
 
 
@@ -33,6 +40,7 @@
 # repeated in the class list?
 # Enter the relevant name(s) and the Unix command(s) below.
 
+cat classlist.csv | grep -i "NAME"
 
 
 
